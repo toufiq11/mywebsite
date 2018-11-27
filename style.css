@@ -1,0 +1,303 @@
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	width:90%;
+	margin: 0 auto;
+}
+ul {
+	padding: 0;
+	margin:0;
+	list-style:none;
+}
+.bottom-margin{
+    margin-bottom: 50px;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+.clearfix{
+    ::after
+        content: "";
+        clear: both;
+        display: table;
+}
+.slider,.slider ul, .slider ul li{
+    height: 660px;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.slider ul li a{
+    padding: 7px 30px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.slider ul li h2{
+    margin-top: 290px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.slider ul li h4{
+    margin-bottom: 100px;
+    margin-left: 30px;
+    font-size: 18px;
+    color: #fff;
+     text-transform: uppercase;
+    font-weight: 300;
+    
+}
+.slider ul li a:last-child{
+    
+    margin-right: 0px;
+}
+
+.slider .img1{
+
+    background-image:url("img/1.jpg");
+         background-size: 100% 100%;
+    
+    /*background-position: center center;*/
+    background-size: cover;
+    
+    
+}
+.slider .img2{
+
+    background-image:url("img/img2.jpg");
+         background-size: 100% 100%;
+    
+    /*background-position: center center;*/
+    background-size: cover;
+    
+    
+}
+.slider .img3{
+
+    background-image:url("img/img3.jpg");
+         background-size: 100% 100%;
+    
+    /*background-position: center center;*/
+    background-size: cover;
+    
+    
+}
+
+#home{
+    margin-bottom: 50px;
+}
+/***************ABOUT US*****************/
+
+.about-pic{
+    
+}
+.about-content{
+   
+    margin-top: 0px;
+}
+.about-content h2{
+    font-size: 24px;
+    display: inline-block;
+    color: #222222;
+    line-height: 30px;
+    margin-bottom: 20px;
+   padding-bottom: 10px;
+    border-bottom: 2px solid #222222;
+}
+.about-content p{
+    font-size: 14px;
+    color: #333;
+    
+}
+
+/*************Menu**********************/
+nav ul{
+    padding-right: 90px;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    padding: 10px 0px 25px 0px;
+    z-index: 200;
+}
+nav ul li{
+    list-style: none;
+    float: right;
+    padding-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+/******************** MEDIA*******************/
+
+@media only screen and (max-width:468px){
+    .slider,.slider ul, .slider ul li{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    }
+        .slider ul li h2{
+    margin-top: 150px;
+    margin-bottom: 20px;
+            font-size: 22px;
+            margin-left: 0px;
+}
+.slider ul li p{
+    margin-bottom: 80px;
+    font-size: 16px;
+      margin-left: 0px;
+    
+}
+}
+
+@media only screen and (max-width:568px){
+    .slider,.slider ul, .slider ul li{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    }
+        .slider ul li h2{
+    margin-top: 150px;
+    margin-bottom: 20px;
+            font-size: 25px;
+            margin-left: 0px;
+}
+.slider ul li p{
+    margin-bottom: 80px;
+    font-size: 18px;
+      margin-left: 0px;
+    
+}
+}
+@media only screen and (min-width:768px){
+    .about-pic{
+    width: 40%;
+    float: left;
+    padding-right: 30px;
+}
+.about-content{
+    width: 60%;
+    float: left;
+    margin-top: 0px;
+}
+    .about-content h2{
+        font-size: 29px;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (min-width:990px){
+    .about-content{
+
+   
+}
+    .about-content p{
+        line-height: 28px;
+    }
+    .about-content h2{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .about-content{
+
+    margin-top: 40px;
+}
+}
+
+/*
+@media only screen and (max-width:488px){
+    
+}
+@media only screen and (max-width:768px){
+    
+}
+@media only screen and (max-width:970px){
+     
+    
+}
+
+@media only screen and (min-width:1400px){
+    
+}
+/*
+@media only screen and (min-width:380px){
+    .hero{
+        padding: 40px 0px 50px 0px;
+    }
+    .hero h2{
+        font-size:50px
+    }
+    .hero p{
+    font-size: 23px;
+    
+    width:380px;
+    margin:0 auto;
+    
+}
+    
+}
+@media only screen and (min-width:500px){
+    .hero p{
+    font-size: 20px;
+    
+    width:480px;
+    margin:0 auto;
+}
+@media only screen and (min-width:700px){
+    .hero{
+        padding:70px 0px 70px 0px;
+    }
+    .hero h2{
+        font-size: 50px
+    }
+    .hero p{
+    font-size: 30px;
+    
+    width:650px;
+    margin:0 auto;
+    
+}
+    nav{
+        display: block;
+    }
+}
+@media only screen and (min-width:920px){
+    .hero{
+    padding: 130px 0px 110px 0px;
+    
+}
+.hero h2{
+    font-size: 50px;
+   
+   
+    
+}
+
+}
+*/
